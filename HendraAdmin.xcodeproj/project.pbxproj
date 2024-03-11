@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAF351F72B9F3B2800CCD0A5 /* HendraAdminApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF351F62B9F3B2800CCD0A5 /* HendraAdminApp.swift */; };
+		FAF351F92B9F3B2800CCD0A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF351F82B9F3B2800CCD0A5 /* ContentView.swift */; };
+		FAF351FB2B9F3B2A00CCD0A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF351FA2B9F3B2A00CCD0A5 /* Assets.xcassets */; };
+		FAF351FE2B9F3B2A00CCD0A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF351FD2B9F3B2A00CCD0A5 /* Preview Assets.xcassets */; };
+		FAF352002B9F3B2A00CCD0A5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF351FF2B9F3B2A00CCD0A5 /* Persistence.swift */; };
+		FAF352032B9F3B2A00CCD0A5 /* HendraAdmin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAF352012B9F3B2A00CCD0A5 /* HendraAdmin.xcdatamodeld */; };
+		FAF3520F2B9F3B2A00CCD0A5 /* HendraAdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3520E2B9F3B2A00CCD0A5 /* HendraAdminTests.swift */; };
+		FAF352192B9F3B2A00CCD0A5 /* HendraAdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF352182B9F3B2A00CCD0A5 /* HendraAdminUITests.swift */; };
+		FAF3521B2B9F3B2A00CCD0A5 /* HendraAdminUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3521A2B9F3B2A00CCD0A5 /* HendraAdminUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAF3520B2B9F3B2A00CCD0A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF351EB2B9F3B2800CCD0A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF351F22B9F3B2800CCD0A5;
+			remoteInfo = HendraAdmin;
+		};
+		FAF352152B9F3B2A00CCD0A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF351EB2B9F3B2800CCD0A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF351F22B9F3B2800CCD0A5;
+			remoteInfo = HendraAdmin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAF351F32B9F3B2800CCD0A5 /* HendraAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HendraAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF351F62B9F3B2800CCD0A5 /* HendraAdminApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HendraAdminApp.swift; sourceTree = "<group>"; };
+		FAF351F82B9F3B2800CCD0A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAF351FA2B9F3B2A00CCD0A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAF351FD2B9F3B2A00CCD0A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAF351FF2B9F3B2A00CCD0A5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FAF352022B9F3B2A00CCD0A5 /* HendraAdmin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HendraAdmin.xcdatamodel; sourceTree = "<group>"; };
+		FAF352042B9F3B2A00CCD0A5 /* HendraAdmin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HendraAdmin.entitlements; sourceTree = "<group>"; };
+		FAF352052B9F3B2A00CCD0A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF3520A2B9F3B2A00CCD0A5 /* HendraAdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HendraAdminTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF3520E2B9F3B2A00CCD0A5 /* HendraAdminTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HendraAdminTests.swift; sourceTree = "<group>"; };
+		FAF352142B9F3B2A00CCD0A5 /* HendraAdminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HendraAdminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF352182B9F3B2A00CCD0A5 /* HendraAdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HendraAdminUITests.swift; sourceTree = "<group>"; };
+		FAF3521A2B9F3B2A00CCD0A5 /* HendraAdminUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HendraAdminUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAF351F02B9F3B2800CCD0A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF352072B9F3B2A00CCD0A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF352112B9F3B2A00CCD0A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAF351EA2B9F3B2800CCD0A5 = {
+			isa = PBXGroup;
+			children = (
+				FAF351F52B9F3B2800CCD0A5 /* HendraAdmin */,
+				FAF3520D2B9F3B2A00CCD0A5 /* HendraAdminTests */,
+				FAF352172B9F3B2A00CCD0A5 /* HendraAdminUITests */,
+				FAF351F42B9F3B2800CCD0A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAF351F42B9F3B2800CCD0A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAF351F32B9F3B2800CCD0A5 /* HendraAdmin.app */,
+				FAF3520A2B9F3B2A00CCD0A5 /* HendraAdminTests.xctest */,
+				FAF352142B9F3B2A00CCD0A5 /* HendraAdminUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAF351F52B9F3B2800CCD0A5 /* HendraAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				FAF351F62B9F3B2800CCD0A5 /* HendraAdminApp.swift */,
+				FAF351F82B9F3B2800CCD0A5 /* ContentView.swift */,
+				FAF351FA2B9F3B2A00CCD0A5 /* Assets.xcassets */,
+				FAF351FF2B9F3B2A00CCD0A5 /* Persistence.swift */,
+				FAF352042B9F3B2A00CCD0A5 /* HendraAdmin.entitlements */,
+				FAF352052B9F3B2A00CCD0A5 /* Info.plist */,
+				FAF352012B9F3B2A00CCD0A5 /* HendraAdmin.xcdatamodeld */,
+				FAF351FC2B9F3B2A00CCD0A5 /* Preview Content */,
+			);
+			path = HendraAdmin;
+			sourceTree = "<group>";
+		};
+		FAF351FC2B9F3B2A00CCD0A5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FAF351FD2B9F3B2A00CCD0A5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAF3520D2B9F3B2A00CCD0A5 /* HendraAdminTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3520E2B9F3B2A00CCD0A5 /* HendraAdminTests.swift */,
+			);
+			path = HendraAdminTests;
+			sourceTree = "<group>";
+		};
+		FAF352172B9F3B2A00CCD0A5 /* HendraAdminUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAF352182B9F3B2A00CCD0A5 /* HendraAdminUITests.swift */,
+				FAF3521A2B9F3B2A00CCD0A5 /* HendraAdminUITestsLaunchTests.swift */,
+			);
+			path = HendraAdminUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAF351F22B9F3B2800CCD0A5 /* HendraAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF3521E2B9F3B2A00CCD0A5 /* Build configuration list for PBXNativeTarget "HendraAdmin" */;
+			buildPhases = (
+				FAF351EF2B9F3B2800CCD0A5 /* Sources */,
+				FAF351F02B9F3B2800CCD0A5 /* Frameworks */,
+				FAF351F12B9F3B2800CCD0A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HendraAdmin;
+			productName = HendraAdmin;
+			productReference = FAF351F32B9F3B2800CCD0A5 /* HendraAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAF352092B9F3B2A00CCD0A5 /* HendraAdminTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF352212B9F3B2A00CCD0A5 /* Build configuration list for PBXNativeTarget "HendraAdminTests" */;
+			buildPhases = (
+				FAF352062B9F3B2A00CCD0A5 /* Sources */,
+				FAF352072B9F3B2A00CCD0A5 /* Frameworks */,
+				FAF352082B9F3B2A00CCD0A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF3520C2B9F3B2A00CCD0A5 /* PBXTargetDependency */,
+			);
+			name = HendraAdminTests;
+			productName = HendraAdminTests;
+			productReference = FAF3520A2B9F3B2A00CCD0A5 /* HendraAdminTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAF352132B9F3B2A00CCD0A5 /* HendraAdminUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF352242B9F3B2A00CCD0A5 /* Build configuration list for PBXNativeTarget "HendraAdminUITests" */;
+			buildPhases = (
+				FAF352102B9F3B2A00CCD0A5 /* Sources */,
+				FAF352112B9F3B2A00CCD0A5 /* Frameworks */,
+				FAF352122B9F3B2A00CCD0A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF352162B9F3B2A00CCD0A5 /* PBXTargetDependency */,
+			);
+			name = HendraAdminUITests;
+			productName = HendraAdminUITests;
+			productReference = FAF352142B9F3B2A00CCD0A5 /* HendraAdminUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAF351EB2B9F3B2800CCD0A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FAF351F22B9F3B2800CCD0A5 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					FAF352092B9F3B2A00CCD0A5 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = FAF351F22B9F3B2800CCD0A5;
+					};
+					FAF352132B9F3B2A00CCD0A5 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = FAF351F22B9F3B2800CCD0A5;
+					};
+				};
+			};
+			buildConfigurationList = FAF351EE2B9F3B2800CCD0A5 /* Build configuration list for PBXProject "HendraAdmin" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAF351EA2B9F3B2800CCD0A5;
+			productRefGroup = FAF351F42B9F3B2800CCD0A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAF351F22B9F3B2800CCD0A5 /* HendraAdmin */,
+				FAF352092B9F3B2A00CCD0A5 /* HendraAdminTests */,
+				FAF352132B9F3B2A00CCD0A5 /* HendraAdminUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAF351F12B9F3B2800CCD0A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF351FE2B9F3B2A00CCD0A5 /* Preview Assets.xcassets in Resources */,
+				FAF351FB2B9F3B2A00CCD0A5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF352082B9F3B2A00CCD0A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF352122B9F3B2A00CCD0A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAF351EF2B9F3B2800CCD0A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF352002B9F3B2A00CCD0A5 /* Persistence.swift in Sources */,
+				FAF351F92B9F3B2800CCD0A5 /* ContentView.swift in Sources */,
+				FAF351F72B9F3B2800CCD0A5 /* HendraAdminApp.swift in Sources */,
+				FAF352032B9F3B2A00CCD0A5 /* HendraAdmin.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF352062B9F3B2A00CCD0A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF3520F2B9F3B2A00CCD0A5 /* HendraAdminTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF352102B9F3B2A00CCD0A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF3521B2B9F3B2A00CCD0A5 /* HendraAdminUITestsLaunchTests.swift in Sources */,
+				FAF352192B9F3B2A00CCD0A5 /* HendraAdminUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAF3520C2B9F3B2A00CCD0A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF351F22B9F3B2800CCD0A5 /* HendraAdmin */;
+			targetProxy = FAF3520B2B9F3B2A00CCD0A5 /* PBXContainerItemProxy */;
+		};
+		FAF352162B9F3B2A00CCD0A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF351F22B9F3B2800CCD0A5 /* HendraAdmin */;
+			targetProxy = FAF352152B9F3B2A00CCD0A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FAF3521C2B9F3B2A00CCD0A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAF3521D2B9F3B2A00CCD0A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAF3521F2B9F3B2A00CCD0A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HendraAdmin/HendraAdmin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HendraAdmin/Preview Content\"";
+				DEVELOPMENT_TEAM = 8957MJT3NY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HendraAdmin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wilfried.gossan.HendraAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAF352202B9F3B2A00CCD0A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HendraAdmin/HendraAdmin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HendraAdmin/Preview Content\"";
+				DEVELOPMENT_TEAM = 8957MJT3NY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HendraAdmin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wilfried.gossan.HendraAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAF352222B9F3B2A00CCD0A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8957MJT3NY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wilfried.gossan.HendraAdminTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HendraAdmin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HendraAdmin";
+			};
+			name = Debug;
+		};
+		FAF352232B9F3B2A00CCD0A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8957MJT3NY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wilfried.gossan.HendraAdminTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HendraAdmin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HendraAdmin";
+			};
+			name = Release;
+		};
+		FAF352252B9F3B2A00CCD0A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8957MJT3NY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wilfried.gossan.HendraAdminUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HendraAdmin;
+			};
+			name = Debug;
+		};
+		FAF352262B9F3B2A00CCD0A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8957MJT3NY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wilfried.gossan.HendraAdminUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HendraAdmin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAF351EE2B9F3B2800CCD0A5 /* Build configuration list for PBXProject "HendraAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF3521C2B9F3B2A00CCD0A5 /* Debug */,
+				FAF3521D2B9F3B2A00CCD0A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF3521E2B9F3B2A00CCD0A5 /* Build configuration list for PBXNativeTarget "HendraAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF3521F2B9F3B2A00CCD0A5 /* Debug */,
+				FAF352202B9F3B2A00CCD0A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF352212B9F3B2A00CCD0A5 /* Build configuration list for PBXNativeTarget "HendraAdminTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF352222B9F3B2A00CCD0A5 /* Debug */,
+				FAF352232B9F3B2A00CCD0A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF352242B9F3B2A00CCD0A5 /* Build configuration list for PBXNativeTarget "HendraAdminUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF352252B9F3B2A00CCD0A5 /* Debug */,
+				FAF352262B9F3B2A00CCD0A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAF352012B9F3B2A00CCD0A5 /* HendraAdmin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAF352022B9F3B2A00CCD0A5 /* HendraAdmin.xcdatamodel */,
+			);
+			currentVersion = FAF352022B9F3B2A00CCD0A5 /* HendraAdmin.xcdatamodel */;
+			path = HendraAdmin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FAF351EB2B9F3B2800CCD0A5 /* Project object */;
+}

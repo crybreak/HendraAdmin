@@ -7,6 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA16EEB92BA56D0C006EACF1 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EEB82BA56D0C006EACF1 /* SceneView.swift */; };
+		FA16EEC12BA72BF2006EACF1 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EEC02BA72BF2006EACF1 /* DocumentPicker.swift */; };
+		FA16EEC32BA73008006EACF1 /* DocumentPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EEC22BA73008006EACF1 /* DocumentPickerButton.swift */; };
+		FA16EEC52BA74B73006EACF1 /* AttachmentUSDZ + Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EEC42BA74B73006EACF1 /* AttachmentUSDZ + Helper.swift */; };
+		FA16EEC82BA76431006EACF1 /* ProductAttachmentUSDZView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EEC72BA76431006EACF1 /* ProductAttachmentUSDZView.swift */; };
+		FA16EF072BA84A0C006EACF1 /* LinkedAttachmentUSDZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EF062BA84A0C006EACF1 /* LinkedAttachmentUSDZ.swift */; };
+		FA16EF4B2BA9C58A006EACF1 /* ProgressConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EF4A2BA9C58A006EACF1 /* ProgressConfig.swift */; };
+		FA16EF512BAAEA8C006EACF1 /* ProductSelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EF502BAAEA8C006EACF1 /* ProductSelectButton.swift */; };
+		FA16EF532BAAED31006EACF1 /* LinkAttachmentImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EF522BAAED31006EACF1 /* LinkAttachmentImage.swift */; };
+		FA16EF552BAC110D006EACF1 /* ProductAttachmentImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EF542BAC110D006EACF1 /* ProductAttachmentImageView.swift */; };
+		FA16EF582BAD92A0006EACF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA16EF572BAD92A0006EACF1 /* GoogleService-Info.plist */; };
+		FA16EF5B2BAD92F4006EACF1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FA16EF5A2BAD92F4006EACF1 /* FirebaseFirestore */; };
+		FA16EF5D2BAD930A006EACF1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FA16EF5C2BAD930A006EACF1 /* FirebaseStorage */; };
+		FA16EF5F2BAD9323006EACF1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FA16EF5E2BAD9323006EACF1 /* FirebaseAuth */; };
+		FA16EF622BAD98A7006EACF1 /* FirestoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EF612BAD98A7006EACF1 /* FirestoreAPI.swift */; };
+		FA16EF662BAD9920006EACF1 /* SUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EF652BAD9920006EACF1 /* SUser.swift */; };
+		FA16EF682BAD9A4F006EACF1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA16EF672BAD9A4F006EACF1 /* FirebaseFirestoreSwift */; };
+		FA16EF6A2BADD737006EACF1 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EF692BADD737006EACF1 /* UserManager.swift */; };
+		FA16EF6D2BAE3040006EACF1 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EF6C2BAE3040006EACF1 /* StorageManager.swift */; };
+		FA16EFAC2BB2D662006EACF1 /* UserProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EFAB2BB2D662006EACF1 /* UserProduct.swift */; };
+		FA16EFAE2BB42B30006EACF1 /* userNoteExist.apns in Resources */ = {isa = PBXBuildFile; fileRef = FA16EFAD2BB42B30006EACF1 /* userNoteExist.apns */; };
+		FA16EFB02BB42DAD006EACF1 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16EFAF2BB42DAD006EACF1 /* Notifications.swift */; };
+		FA61A7EA2BA1DDB80024B667 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A7E92BA1DDB80024B667 /* ProductListView.swift */; };
+		FA61A7EC2BA1E57A0024B667 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A7EB2BA1E57A0024B667 /* ProductRow.swift */; };
+		FA61A7EE2BA200F20024B667 /* ProductSortedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A7ED2BA200F20024B667 /* ProductSortedView.swift */; };
+		FA61A7F22BA2348A0024B667 /* ProductSetInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A7F12BA2348A0024B667 /* ProductSetInformationView.swift */; };
+		FA61A7F42BA23B3B0024B667 /* Genre Meuble.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A7F32BA23B3B0024B667 /* Genre Meuble.swift */; };
+		FA61A7F82BA2400D0024B667 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A7F72BA2400D0024B667 /* Type.swift */; };
+		FA61A7FC2BA338260024B667 /* Genre Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A7FB2BA338260024B667 /* Genre Mode.swift */; };
+		FA61A7FF2BA345750024B667 /* ProductObserverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A7FE2BA345750024B667 /* ProductObserverViewModel.swift */; };
+		FA61A8012BA346BD0024B667 /* UserObserverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A8002BA346BD0024B667 /* UserObserverViewModel.swift */; };
+		FA61A8032BA3483D0024B667 /* NavigationStateManager + Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61A8022BA3483D0024B667 /* NavigationStateManager + Observer.swift */; };
 		FAF351F72B9F3B2800CCD0A5 /* HendraAdminApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF351F62B9F3B2800CCD0A5 /* HendraAdminApp.swift */; };
 		FAF351F92B9F3B2800CCD0A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF351F82B9F3B2800CCD0A5 /* ContentView.swift */; };
 		FAF351FB2B9F3B2A00CCD0A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF351FA2B9F3B2A00CCD0A5 /* Assets.xcassets */; };
@@ -16,6 +48,22 @@
 		FAF3520F2B9F3B2A00CCD0A5 /* HendraAdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3520E2B9F3B2A00CCD0A5 /* HendraAdminTests.swift */; };
 		FAF352192B9F3B2A00CCD0A5 /* HendraAdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF352182B9F3B2A00CCD0A5 /* HendraAdminUITests.swift */; };
 		FAF3521B2B9F3B2A00CCD0A5 /* HendraAdminUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3521A2B9F3B2A00CCD0A5 /* HendraAdminUITestsLaunchTests.swift */; };
+		FAF352292B9F3FAB00CCD0A5 /* Product + Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF352282B9F3FAB00CCD0A5 /* Product + Helper.swift */; };
+		FAF3522B2B9F550600CCD0A5 /* Users + Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3522A2B9F550600CCD0A5 /* Users + Helper.swift */; };
+		FAF3522D2B9F5ABB00CCD0A5 /* AttachementImage + Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3522C2B9F5ABB00CCD0A5 /* AttachementImage + Helper.swift */; };
+		FAF352312B9F88D700CCD0A5 /* ProductsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF352302B9F88D700CCD0A5 /* ProductsTests.swift */; };
+		FAF352352B9F8E3D00CCD0A5 /* Predicate + Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF352342B9F8E3D00CCD0A5 /* Predicate + Helper.swift */; };
+		FAF352382B9F950E00CCD0A5 /* DetailProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF352372B9F950E00CCD0A5 /* DetailProduct.swift */; };
+		FAF3523C2BA03C4700CCD0A5 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3523B2BA03C4700CCD0A5 /* UserListView.swift */; };
+		FAF3523F2BA03C7800CCD0A5 /* NavigationStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3523E2BA03C7800CCD0A5 /* NavigationStateManager.swift */; };
+		FAF352432BA04A0500CCD0A5 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF352422BA04A0500CCD0A5 /* UserRow.swift */; };
+		FAF352452BA04B7900CCD0A5 /* PofilImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF352442BA04B7900CCD0A5 /* PofilImage.swift */; };
+		FAF352472BA0A64500CCD0A5 /* UserSortedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF352462BA0A64500CCD0A5 /* UserSortedView.swift */; };
+		FAF352492BA0AB3F00CCD0A5 /* UserInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF352482BA0AB3F00CCD0A5 /* UserInformationView.swift */; };
+		FAF3524C2BA0AD0E00CCD0A5 /* View + Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3524B2BA0AD0E00CCD0A5 /* View + Modifiers.swift */; };
+		FAF3524E2BA0AD4B00CCD0A5 /* Color + Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3524D2BA0AD4B00CCD0A5 /* Color + Helper.swift */; };
+		FAF352502BA19DEC00CCD0A5 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3524F2BA19DEC00CCD0A5 /* Country.swift */; };
+		FAF352522BA1A73100CCD0A5 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF352512BA1A73000CCD0A5 /* FlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +84,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA16EEB82BA56D0C006EACF1 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
+		FA16EEC02BA72BF2006EACF1 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		FA16EEC22BA73008006EACF1 /* DocumentPickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerButton.swift; sourceTree = "<group>"; };
+		FA16EEC42BA74B73006EACF1 /* AttachmentUSDZ + Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttachmentUSDZ + Helper.swift"; sourceTree = "<group>"; };
+		FA16EEC72BA76431006EACF1 /* ProductAttachmentUSDZView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAttachmentUSDZView.swift; sourceTree = "<group>"; };
+		FA16EF062BA84A0C006EACF1 /* LinkedAttachmentUSDZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedAttachmentUSDZ.swift; sourceTree = "<group>"; };
+		FA16EF082BA854ED006EACF1 /* HendraAdminRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HendraAdminRelease.entitlements; sourceTree = "<group>"; };
+		FA16EF4A2BA9C58A006EACF1 /* ProgressConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressConfig.swift; sourceTree = "<group>"; };
+		FA16EF502BAAEA8C006EACF1 /* ProductSelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSelectButton.swift; sourceTree = "<group>"; };
+		FA16EF522BAAED31006EACF1 /* LinkAttachmentImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAttachmentImage.swift; sourceTree = "<group>"; };
+		FA16EF542BAC110D006EACF1 /* ProductAttachmentImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAttachmentImageView.swift; sourceTree = "<group>"; };
+		FA16EF572BAD92A0006EACF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA16EF612BAD98A7006EACF1 /* FirestoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreAPI.swift; sourceTree = "<group>"; };
+		FA16EF652BAD9920006EACF1 /* SUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUser.swift; sourceTree = "<group>"; };
+		FA16EF692BADD737006EACF1 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		FA16EF6C2BAE3040006EACF1 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		FA16EFAB2BB2D662006EACF1 /* UserProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProduct.swift; sourceTree = "<group>"; };
+		FA16EFAD2BB42B30006EACF1 /* userNoteExist.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = userNoteExist.apns; sourceTree = "<group>"; };
+		FA16EFAF2BB42DAD006EACF1 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		FA61A7E92BA1DDB80024B667 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		FA61A7EB2BA1E57A0024B667 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		FA61A7ED2BA200F20024B667 /* ProductSortedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSortedView.swift; sourceTree = "<group>"; };
+		FA61A7F12BA2348A0024B667 /* ProductSetInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSetInformationView.swift; sourceTree = "<group>"; };
+		FA61A7F32BA23B3B0024B667 /* Genre Meuble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genre Meuble.swift"; sourceTree = "<group>"; };
+		FA61A7F72BA2400D0024B667 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		FA61A7FB2BA338260024B667 /* Genre Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Genre Mode.swift"; sourceTree = "<group>"; };
+		FA61A7FE2BA345750024B667 /* ProductObserverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductObserverViewModel.swift; sourceTree = "<group>"; };
+		FA61A8002BA346BD0024B667 /* UserObserverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObserverViewModel.swift; sourceTree = "<group>"; };
+		FA61A8022BA3483D0024B667 /* NavigationStateManager + Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationStateManager + Observer.swift"; sourceTree = "<group>"; };
 		FAF351F32B9F3B2800CCD0A5 /* HendraAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HendraAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF351F62B9F3B2800CCD0A5 /* HendraAdminApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HendraAdminApp.swift; sourceTree = "<group>"; };
 		FAF351F82B9F3B2800CCD0A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +127,22 @@
 		FAF352142B9F3B2A00CCD0A5 /* HendraAdminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HendraAdminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF352182B9F3B2A00CCD0A5 /* HendraAdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HendraAdminUITests.swift; sourceTree = "<group>"; };
 		FAF3521A2B9F3B2A00CCD0A5 /* HendraAdminUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HendraAdminUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAF352282B9F3FAB00CCD0A5 /* Product + Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product + Helper.swift"; sourceTree = "<group>"; };
+		FAF3522A2B9F550600CCD0A5 /* Users + Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users + Helper.swift"; sourceTree = "<group>"; };
+		FAF3522C2B9F5ABB00CCD0A5 /* AttachementImage + Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttachementImage + Helper.swift"; sourceTree = "<group>"; };
+		FAF352302B9F88D700CCD0A5 /* ProductsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTests.swift; sourceTree = "<group>"; };
+		FAF352342B9F8E3D00CCD0A5 /* Predicate + Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Predicate + Helper.swift"; sourceTree = "<group>"; };
+		FAF352372B9F950E00CCD0A5 /* DetailProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProduct.swift; sourceTree = "<group>"; };
+		FAF3523B2BA03C4700CCD0A5 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		FAF3523E2BA03C7800CCD0A5 /* NavigationStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStateManager.swift; sourceTree = "<group>"; };
+		FAF352422BA04A0500CCD0A5 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
+		FAF352442BA04B7900CCD0A5 /* PofilImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PofilImage.swift; sourceTree = "<group>"; };
+		FAF352462BA0A64500CCD0A5 /* UserSortedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSortedView.swift; sourceTree = "<group>"; };
+		FAF352482BA0AB3F00CCD0A5 /* UserInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationView.swift; sourceTree = "<group>"; };
+		FAF3524B2BA0AD0E00CCD0A5 /* View + Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Modifiers.swift"; sourceTree = "<group>"; };
+		FAF3524D2BA0AD4B00CCD0A5 /* Color + Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Helper.swift"; sourceTree = "<group>"; };
+		FAF3524F2BA19DEC00CCD0A5 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		FAF352512BA1A73000CCD0A5 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +150,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA16EF5B2BAD92F4006EACF1 /* FirebaseFirestore in Frameworks */,
+				FA16EF5F2BAD9323006EACF1 /* FirebaseAuth in Frameworks */,
+				FA16EF5D2BAD930A006EACF1 /* FirebaseStorage in Frameworks */,
+				FA16EF682BAD9A4F006EACF1 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,13 +174,117 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA16EEBF2BA72A87006EACF1 /* product detail */ = {
+			isa = PBXGroup;
+			children = (
+				FAF352372B9F950E00CCD0A5 /* DetailProduct.swift */,
+				FA16EEC02BA72BF2006EACF1 /* DocumentPicker.swift */,
+				FA16EEC22BA73008006EACF1 /* DocumentPickerButton.swift */,
+			);
+			path = "product detail";
+			sourceTree = "<group>";
+		};
+		FA16EF4E2BAAE272006EACF1 /* product list */ = {
+			isa = PBXGroup;
+			children = (
+				FA61A7ED2BA200F20024B667 /* ProductSortedView.swift */,
+				FA61A7E92BA1DDB80024B667 /* ProductListView.swift */,
+				FA61A7EB2BA1E57A0024B667 /* ProductRow.swift */,
+				FA61A7F12BA2348A0024B667 /* ProductSetInformationView.swift */,
+			);
+			path = "product list";
+			sourceTree = "<group>";
+		};
+		FA16EF4F2BAAEA68006EACF1 /* product attachment */ = {
+			isa = PBXGroup;
+			children = (
+				FA16EF502BAAEA8C006EACF1 /* ProductSelectButton.swift */,
+				FA16EEC72BA76431006EACF1 /* ProductAttachmentUSDZView.swift */,
+				FA16EF062BA84A0C006EACF1 /* LinkedAttachmentUSDZ.swift */,
+				FA16EF522BAAED31006EACF1 /* LinkAttachmentImage.swift */,
+				FA16EF542BAC110D006EACF1 /* ProductAttachmentImageView.swift */,
+			);
+			path = "product attachment";
+			sourceTree = "<group>";
+		};
+		FA16EF592BAD92F4006EACF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA16EF602BAD9827006EACF1 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				FA16EF6B2BAE301B006EACF1 /* firestorage */,
+				FA16EF642BAD990B006EACF1 /* model */,
+				FA16EF632BAD98E6006EACF1 /* firestore */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		FA16EF632BAD98E6006EACF1 /* firestore */ = {
+			isa = PBXGroup;
+			children = (
+				FA16EF612BAD98A7006EACF1 /* FirestoreAPI.swift */,
+				FA16EFAB2BB2D662006EACF1 /* UserProduct.swift */,
+			);
+			path = firestore;
+			sourceTree = "<group>";
+		};
+		FA16EF642BAD990B006EACF1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FA16EF652BAD9920006EACF1 /* SUser.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FA16EF6B2BAE301B006EACF1 /* firestorage */ = {
+			isa = PBXGroup;
+			children = (
+				FA16EF6C2BAE3040006EACF1 /* StorageManager.swift */,
+			);
+			path = firestorage;
+			sourceTree = "<group>";
+		};
+		FA61A7F52BA23F9A0024B667 /* product information */ = {
+			isa = PBXGroup;
+			children = (
+				FA61A7F72BA2400D0024B667 /* Type.swift */,
+				FA61A7F32BA23B3B0024B667 /* Genre Meuble.swift */,
+				FA61A7FB2BA338260024B667 /* Genre Mode.swift */,
+			);
+			path = "product information";
+			sourceTree = "<group>";
+		};
+		FA61A7F62BA23FB60024B667 /* user information */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3524F2BA19DEC00CCD0A5 /* Country.swift */,
+			);
+			path = "user information";
+			sourceTree = "<group>";
+		};
+		FA61A7FD2BA345460024B667 /* observer */ = {
+			isa = PBXGroup;
+			children = (
+				FA61A7FE2BA345750024B667 /* ProductObserverViewModel.swift */,
+				FA61A8002BA346BD0024B667 /* UserObserverViewModel.swift */,
+			);
+			path = observer;
+			sourceTree = "<group>";
+		};
 		FAF351EA2B9F3B2800CCD0A5 = {
 			isa = PBXGroup;
 			children = (
+				FA16EFAD2BB42B30006EACF1 /* userNoteExist.apns */,
 				FAF351F52B9F3B2800CCD0A5 /* HendraAdmin */,
 				FAF3520D2B9F3B2A00CCD0A5 /* HendraAdminTests */,
 				FAF352172B9F3B2A00CCD0A5 /* HendraAdminUITests */,
 				FAF351F42B9F3B2800CCD0A5 /* Products */,
+				FA16EF592BAD92F4006EACF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,12 +301,17 @@
 		FAF351F52B9F3B2800CCD0A5 /* HendraAdmin */ = {
 			isa = PBXGroup;
 			children = (
-				FAF351F62B9F3B2800CCD0A5 /* HendraAdminApp.swift */,
+				FA16EF082BA854ED006EACF1 /* HendraAdminRelease.entitlements */,
 				FAF351F82B9F3B2800CCD0A5 /* ContentView.swift */,
+				FAF351F62B9F3B2800CCD0A5 /* HendraAdminApp.swift */,
+				FAF352362B9F94A000CCD0A5 /* View */,
+				FA16EF602BAD9827006EACF1 /* Firebase */,
+				FAF352272B9F3F8600CCD0A5 /* Core Data */,
+				FAF3523D2BA03C5D00CCD0A5 /* View Model */,
 				FAF351FA2B9F3B2A00CCD0A5 /* Assets.xcassets */,
-				FAF351FF2B9F3B2A00CCD0A5 /* Persistence.swift */,
 				FAF352042B9F3B2A00CCD0A5 /* HendraAdmin.entitlements */,
 				FAF352052B9F3B2A00CCD0A5 /* Info.plist */,
+				FA16EF572BAD92A0006EACF1 /* GoogleService-Info.plist */,
 				FAF352012B9F3B2A00CCD0A5 /* HendraAdmin.xcdatamodeld */,
 				FAF351FC2B9F3B2A00CCD0A5 /* Preview Content */,
 			);
@@ -124,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF3520E2B9F3B2A00CCD0A5 /* HendraAdminTests.swift */,
+				FAF352302B9F88D700CCD0A5 /* ProductsTests.swift */,
 			);
 			path = HendraAdminTests;
 			sourceTree = "<group>";
@@ -135,6 +342,93 @@
 				FAF3521A2B9F3B2A00CCD0A5 /* HendraAdminUITestsLaunchTests.swift */,
 			);
 			path = HendraAdminUITests;
+			sourceTree = "<group>";
+		};
+		FAF352272B9F3F8600CCD0A5 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA61A7FD2BA345460024B667 /* observer */,
+				FAF351FF2B9F3B2A00CCD0A5 /* Persistence.swift */,
+				FAF352322B9F8DBC00CCD0A5 /* model */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		FAF352322B9F8DBC00CCD0A5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FA61A7F62BA23FB60024B667 /* user information */,
+				FA61A7F52BA23F9A0024B667 /* product information */,
+				FAF352332B9F8DE900CCD0A5 /* data conversion helper */,
+				FAF352282B9F3FAB00CCD0A5 /* Product + Helper.swift */,
+				FAF3522C2B9F5ABB00CCD0A5 /* AttachementImage + Helper.swift */,
+				FA16EEC42BA74B73006EACF1 /* AttachmentUSDZ + Helper.swift */,
+				FAF3522A2B9F550600CCD0A5 /* Users + Helper.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FAF352332B9F8DE900CCD0A5 /* data conversion helper */ = {
+			isa = PBXGroup;
+			children = (
+				FAF352342B9F8E3D00CCD0A5 /* Predicate + Helper.swift */,
+				FAF3524D2BA0AD4B00CCD0A5 /* Color + Helper.swift */,
+			);
+			path = "data conversion helper";
+			sourceTree = "<group>";
+		};
+		FAF352362B9F94A000CCD0A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3524A2BA0ACFC00CCD0A5 /* utility */,
+				FAF352392BA03BE800CCD0A5 /* User */,
+				FAF3523A2BA03BEE00CCD0A5 /* Product */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAF352392BA03BE800CCD0A5 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3523B2BA03C4700CCD0A5 /* UserListView.swift */,
+				FAF352462BA0A64500CCD0A5 /* UserSortedView.swift */,
+				FAF352422BA04A0500CCD0A5 /* UserRow.swift */,
+				FAF352442BA04B7900CCD0A5 /* PofilImage.swift */,
+				FAF352482BA0AB3F00CCD0A5 /* UserInformationView.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		FAF3523A2BA03BEE00CCD0A5 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				FA16EEB82BA56D0C006EACF1 /* SceneView.swift */,
+				FA16EF4F2BAAEA68006EACF1 /* product attachment */,
+				FA16EF4E2BAAE272006EACF1 /* product list */,
+				FA16EEBF2BA72A87006EACF1 /* product detail */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		FAF3523D2BA03C5D00CCD0A5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3523E2BA03C7800CCD0A5 /* NavigationStateManager.swift */,
+				FA61A8022BA3483D0024B667 /* NavigationStateManager + Observer.swift */,
+				FA16EF692BADD737006EACF1 /* UserManager.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		FAF3524A2BA0ACFC00CCD0A5 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3524B2BA0AD0E00CCD0A5 /* View + Modifiers.swift */,
+				FAF352512BA1A73000CCD0A5 /* FlowLayout.swift */,
+				FA16EF4A2BA9C58A006EACF1 /* ProgressConfig.swift */,
+				FA16EFAF2BB42DAD006EACF1 /* Notifications.swift */,
+			);
+			path = utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +447,12 @@
 			dependencies = (
 			);
 			name = HendraAdmin;
+			packageProductDependencies = (
+				FA16EF5A2BAD92F4006EACF1 /* FirebaseFirestore */,
+				FA16EF5C2BAD930A006EACF1 /* FirebaseStorage */,
+				FA16EF5E2BAD9323006EACF1 /* FirebaseAuth */,
+				FA16EF672BAD9A4F006EACF1 /* FirebaseFirestoreSwift */,
+			);
 			productName = HendraAdmin;
 			productReference = FAF351F32B9F3B2800CCD0A5 /* HendraAdmin.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +525,9 @@
 				Base,
 			);
 			mainGroup = FAF351EA2B9F3B2800CCD0A5;
+			packageReferences = (
+				FA16EF562BAD8AF0006EACF1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FAF351F42B9F3B2800CCD0A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,6 +544,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA16EFAE2BB42B30006EACF1 /* userNoteExist.apns in Resources */,
+				FA16EF582BAD92A0006EACF1 /* GoogleService-Info.plist in Resources */,
 				FAF351FE2B9F3B2A00CCD0A5 /* Preview Assets.xcassets in Resources */,
 				FAF351FB2B9F3B2A00CCD0A5 /* Assets.xcassets in Resources */,
 			);
@@ -268,9 +573,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF352002B9F3B2A00CCD0A5 /* Persistence.swift in Sources */,
+				FAF3524E2BA0AD4B00CCD0A5 /* Color + Helper.swift in Sources */,
+				FA16EF622BAD98A7006EACF1 /* FirestoreAPI.swift in Sources */,
+				FAF3523C2BA03C4700CCD0A5 /* UserListView.swift in Sources */,
+				FA16EFAC2BB2D662006EACF1 /* UserProduct.swift in Sources */,
+				FAF352522BA1A73100CCD0A5 /* FlowLayout.swift in Sources */,
+				FA61A7EA2BA1DDB80024B667 /* ProductListView.swift in Sources */,
+				FA16EEC52BA74B73006EACF1 /* AttachmentUSDZ + Helper.swift in Sources */,
+				FA61A7EE2BA200F20024B667 /* ProductSortedView.swift in Sources */,
+				FAF3523F2BA03C7800CCD0A5 /* NavigationStateManager.swift in Sources */,
+				FAF352432BA04A0500CCD0A5 /* UserRow.swift in Sources */,
 				FAF351F92B9F3B2800CCD0A5 /* ContentView.swift in Sources */,
+				FA16EF072BA84A0C006EACF1 /* LinkedAttachmentUSDZ.swift in Sources */,
+				FA61A8012BA346BD0024B667 /* UserObserverViewModel.swift in Sources */,
+				FAF3522B2B9F550600CCD0A5 /* Users + Helper.swift in Sources */,
+				FA16EEC12BA72BF2006EACF1 /* DocumentPicker.swift in Sources */,
+				FA16EEB92BA56D0C006EACF1 /* SceneView.swift in Sources */,
+				FAF352452BA04B7900CCD0A5 /* PofilImage.swift in Sources */,
+				FA61A7FC2BA338260024B667 /* Genre Mode.swift in Sources */,
+				FA16EEC32BA73008006EACF1 /* DocumentPickerButton.swift in Sources */,
+				FAF352292B9F3FAB00CCD0A5 /* Product + Helper.swift in Sources */,
+				FA61A7EC2BA1E57A0024B667 /* ProductRow.swift in Sources */,
+				FA16EF662BAD9920006EACF1 /* SUser.swift in Sources */,
 				FAF351F72B9F3B2800CCD0A5 /* HendraAdminApp.swift in Sources */,
+				FAF352502BA19DEC00CCD0A5 /* Country.swift in Sources */,
+				FA16EF552BAC110D006EACF1 /* ProductAttachmentImageView.swift in Sources */,
+				FA61A7F82BA2400D0024B667 /* Type.swift in Sources */,
+				FA61A7F42BA23B3B0024B667 /* Genre Meuble.swift in Sources */,
+				FAF3524C2BA0AD0E00CCD0A5 /* View + Modifiers.swift in Sources */,
+				FA61A7FF2BA345750024B667 /* ProductObserverViewModel.swift in Sources */,
+				FA16EFB02BB42DAD006EACF1 /* Notifications.swift in Sources */,
 				FAF352032B9F3B2A00CCD0A5 /* HendraAdmin.xcdatamodeld in Sources */,
+				FA16EF6A2BADD737006EACF1 /* UserManager.swift in Sources */,
+				FA16EF4B2BA9C58A006EACF1 /* ProgressConfig.swift in Sources */,
+				FA16EF6D2BAE3040006EACF1 /* StorageManager.swift in Sources */,
+				FA16EF532BAAED31006EACF1 /* LinkAttachmentImage.swift in Sources */,
+				FA16EF512BAAEA8C006EACF1 /* ProductSelectButton.swift in Sources */,
+				FAF3522D2B9F5ABB00CCD0A5 /* AttachementImage + Helper.swift in Sources */,
+				FAF352382B9F950E00CCD0A5 /* DetailProduct.swift in Sources */,
+				FAF352472BA0A64500CCD0A5 /* UserSortedView.swift in Sources */,
+				FA16EEC82BA76431006EACF1 /* ProductAttachmentUSDZView.swift in Sources */,
+				FA61A8032BA3483D0024B667 /* NavigationStateManager + Observer.swift in Sources */,
+				FAF352492BA0AB3F00CCD0A5 /* UserInformationView.swift in Sources */,
+				FA61A7F22BA2348A0024B667 /* ProductSetInformationView.swift in Sources */,
+				FAF352352B9F8E3D00CCD0A5 /* Predicate + Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +624,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF352312B9F88D700CCD0A5 /* ProductsTests.swift in Sources */,
 				FAF3520F2B9F3B2A00CCD0A5 /* HendraAdminTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +779,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HendraAdmin/HendraAdmin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HendraAdmin/Preview Content\"";
@@ -444,6 +792,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +800,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wilfried.gossan.HendraAdmin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,11 +812,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = HendraAdmin/HendraAdmin.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HendraAdmin/HendraAdminRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HendraAdmin/Preview Content\"";
-				DEVELOPMENT_TEAM = 8957MJT3NY;
+				DEVELOPMENT_TEAM = 3PB3SZ3FNM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HendraAdmin/Info.plist;
@@ -475,6 +826,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,6 +834,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wilfried.gossan.HendraAdmin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -604,6 +957,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA16EF562BAD8AF0006EACF1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA16EF5A2BAD92F4006EACF1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA16EF562BAD8AF0006EACF1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FA16EF5C2BAD930A006EACF1 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA16EF562BAD8AF0006EACF1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		FA16EF5E2BAD9323006EACF1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA16EF562BAD8AF0006EACF1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FA16EF672BAD9A4F006EACF1 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA16EF562BAD8AF0006EACF1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FAF352012B9F3B2A00CCD0A5 /* HendraAdmin.xcdatamodeld */ = {

@@ -1,0 +1,18 @@
+//
+//  userNoteExist.apns
+//  HendraAdmin
+//
+//  Created by Wilfried Mac Air on 27/03/2024.
+//
+
+{
+    "aps" : {
+        "alert" : {
+            "title" : "Hendra admin",
+            "body" : "User don't exist"
+        },
+        "badge": 0
+        
+    },
+    "Simulator Target Bundle": "wilfried.gossan.HendraAdmin"
+}

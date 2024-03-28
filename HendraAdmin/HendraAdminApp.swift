@@ -8,10 +8,12 @@
 import SwiftUI
 import Firebase
 
+
 @main
 struct HendraAdminApp: App {
     let persistenceController = PersistenceController.shared
-    
+    @Environment(\.scenePhase) var scenePhase
+
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
 
@@ -19,6 +21,11 @@ struct HendraAdminApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+        }.onChange(of: scenePhase) {newScenePhase in
+            if  newScenePhase == .background {
+                print("➡️ main app - background")
+                persistenceController.save()
+            }
         }
     }
 }

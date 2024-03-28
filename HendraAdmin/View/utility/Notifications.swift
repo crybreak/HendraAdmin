@@ -9,26 +9,27 @@ import Foundation
 import UserNotifications
 
 
-func displayNotifications() {
-    let identifier = "user-dont-exist"
+func displayNotifications(center: UNUserNotificationCenter)  {
     let title = "Hendra admin"
     let body = "User don't exist"
     
-    let notificationCenter = UNUserNotificationCenter.current()
     let content = UNMutableNotificationContent()
     content.title = title
     content.body = body
     content.sound = .default
-    
-    let request = UNNotificationRequest(identifier: identifier, content: content, trigger: nil)
-    
-    notificationCenter.removePendingNotificationRequests(withIdentifiers: [identifier])
-    notificationCenter.add(request) { error in
+
+    let date = Date().addingTimeInterval(5)
+    let dateComponenents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+  
+    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponenents, repeats: false)
+
+    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+    center.add(request) { error in
         if let error = error {
-            print("Error adding notification request: \(error)")
+            print(error.localizedDescription)
         } else {
-            print("Notification request added successfully")
+            print("Notifications test")
         }
+        
     }
-    
 }

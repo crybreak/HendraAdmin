@@ -15,8 +15,6 @@ struct DetailProduct: View {
     @EnvironmentObject var stateManager: NavigationStateManager
     @EnvironmentObject var userManager: UserManager
 
-
-    
     @State private var showDocumentPicker = false
     @State var selected3D: AttahcmentUSDZ? = nil
     
@@ -32,12 +30,15 @@ struct DetailProduct: View {
     var body: some View {
         ScrollView  {
             VStack (alignment: .leading){
+                if (userManager.message != nil) {
+                    MessageView(message: $userManager.message)
+                        .zIndex(/*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
+                }
                 if let selected3D  {
                     Home(product: product, attachment: selected3D)
                 }
                 LinkedAttachmentUSDZ(product: product, selected3D: $selected3D)
                 LinkedAttachmentImage(product: product)
-               
             }
             .navigationTitle($product.name)
             .toolbarTitleMenu(content: {
@@ -75,17 +76,51 @@ struct DetailProduct: View {
             .onDisappear {
                 PersistenceController.shared.save()
             }
-            .onAppear {
-                UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert]) { didAllow, error in            
-                    if didAllow {
-                        print("user working")
-                        displayNotifications()
-                    }
-                }
-            }
         }
     }
+}
 
+
+struct MessageView: View {
+    @Binding var message: String?
+
+    var body: some View {
+        
+        HStack {
+            Image(systemName: "message")
+                .foregroundColor(.red)
+            
+            Text(message ?? "")
+                .foregroundColor(.white)
+            
+            Button(action: {
+                message = nil
+            }, label: {
+                Image(systemName: "xmark.circle.fill")
+                    .foregroundColor(Color.gray)
+                    .padding(.leading)
+            })
+            
+        }
+        .padding()
+        .font(Font.custom("Nunito Sans", size: 14))
+
+
+        .background {
+            Color(hex: "093855")
+        }
+        .onAppear {
+            withAnimation (.easeOut.delay(2)) {
+                message = nil
+            }
+        }
+        .onTapGesture(perform: {
+            withAnimation (.easeOut(duration: 2)) {
+               message = nil
+            }
+        })
+
+    }
 }
 
 #Preview {

@@ -14,6 +14,7 @@ class UserManager: ObservableObject {
     
     @Published var users: [SUser] = []
     @Published var product: Product? = nil
+    @Published var message: String? = nil
     
     var sendProduct =  PassthroughSubject<Product, Never>()
     var createProduct = PassthroughSubject<SUser, Never>()
@@ -58,7 +59,7 @@ class UserManager: ObservableObject {
                 self.users = users
                 print(self.users)
                 if users.isEmpty {
-                    print("Désolé, aucun compte ne correspond à cet email.")
+                    message = "Aucun compte avec à cet email."
                 } else {
                     createProduct.send(users.first!)
                     uploadProduct.send(users.first!)

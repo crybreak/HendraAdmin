@@ -28,34 +28,56 @@ struct ProductRow: View {
                 }
                 
                 VStack  (alignment: .leading, spacing: 4){
-                    Text(product.type.rawValue)
-                        .foregroundStyle(.primary)
-                        .font(.system(size: 15))
+                    HStack {
+                        Text(product.type.rawValue)
+                            .foregroundStyle(.primary)
+                            .font(.system(size: 15))
+                        if product.send {
+                            Text("Envoyé")
+                                .font(.caption)
+                                .foregroundColor(.white)
+                                .padding(.horizontal, 5)
+                                .padding(.vertical, 5)
+                                .background(RoundedRectangle(cornerRadius: 5,
+                                                             style: .continuous).fill(Color.red))
+                        } else {
+                            Text("Draft")
+                                .font(.caption)
+                                .foregroundColor(.white)
+                                .padding(.horizontal, 5)
+                                .padding(.vertical, 5)
+                                .background(RoundedRectangle(cornerRadius: 5,
+                                                             style: .continuous).fill(Color.blue))
+                        }
+                    }
                     
                     Text(product.name)
                         .font(.footnote)
-                    if product.genre.count > 0 {
-                        Text(product.genre)
-                            .font(.caption)
-                            .foregroundColor(.white)
-                            .padding(.horizontal, 5)
-                            .padding(.vertical, 5)
-                            .background(RoundedRectangle(cornerRadius: 5,
-                                                         style: .continuous).fill(Color.gray))
-                    } else {
-                        Text(product.creationDate,  formatter: itemFormatter)
-                            .font(.footnote)
-                    }
+                    
+                    
+                    Text(product.creationDate,  formatter: itemFormatter)
+                        .font(.footnote)
+                
                     if product.user != nil {
                         
                         HStack {
-                            Image(systemName: "mappin.and.ellipse")
-                            
-                            Text(product.user!.country.rawValue)
-                            
+                            Group {
+                                Image(systemName: "mappin.and.ellipse")
+                                
+                                Text(product.user!.country.rawValue)
+                            } .font(.footnote)
+                                .foregroundStyle(Color(hex: "E15F39")!)
+                            if product.genre.count > 0 {
+                                Text(product.genre)
+                                    .font(.caption)
+                                    .foregroundColor(.white)
+                                    .padding(.horizontal, 5)
+                                    .padding(.vertical, 5)
+                                    .background(RoundedRectangle(cornerRadius: 5,
+                                                                 style: .continuous).fill(Color.gray))
+                            }
                         }
-                        .font(.footnote)
-                        .foregroundStyle(Color(hex: "E15F39")!)
+                       
                     }
                 }
             }

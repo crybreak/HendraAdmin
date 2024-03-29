@@ -15,6 +15,7 @@ class UserManager: ObservableObject {
     @Published var users: [SUser] = []
     @Published var product: Product? = nil
     @Published var message: String? = nil
+    @Published var isLoading: Bool = false
     
     var sendProduct =  PassthroughSubject<Product, Never>()
     var createProduct = PassthroughSubject<SUser, Never>()
@@ -61,6 +62,8 @@ class UserManager: ObservableObject {
                 if users.isEmpty {
                     message = "Aucun compte avec à cet email."
                 } else {
+                    
+                    isLoading = true
                     createProduct.send(users.first!)
                     uploadProduct.send(users.first!)
                 }
@@ -69,17 +72,20 @@ class UserManager: ObservableObject {
         
         
         createProduct
+            .filter({[unowned self] _ in !self.product!.send})
             .tryMap {[unowned self] user in
                 try DBProductManager.shared.createNewProduct(userId: user.userId,  product: DBProduct(product: self.product!, userId: user.userId))
             }
             .replaceError(with: ())
-            .sink { _ in
+            .sink {[unowned self] _ in
+                self.product!.send = true
             }
             .store(in: &subscriptions)
 
         
         uploadProduct
             .filter{[unowned self] _ in
+                self.isLoading = true
                 if product!.images.isEmpty {
                     return false
                 }
@@ -90,7 +96,7 @@ class UserManager: ObservableObject {
                     .filter({!$0.send})
                     .map { image -> AnyPublisher<String?, Never> in
                         StorageManager.shared.saveImage(image: image , userId: SUser.userId , type: "ThumbnaiData", product: self.product!)
-                            .compactMap {storage in
+                            .compactMap { storage in
                                 storage?.path
                             }
                             .replaceError(with: nil)
@@ -99,11 +105,13 @@ class UserManager: ObservableObject {
                     }
             })
             .receive(on: DispatchQueue.main)
-            .sink { _ in }
+            .sink {  [unowned self] _ in self.isLoading = false}
             .store(in: &subscriptions)
         
         uploadProduct
             .filter{[unowned self] _ in
+                self.isLoading = true
+
                 if product!.images.isEmpty {
                     return false
                 }
@@ -123,11 +131,13 @@ class UserManager: ObservableObject {
                     }
             })
             .receive(on: DispatchQueue.main)
-            .sink { _ in }
+            .sink { [unowned self] _ in self.isLoading = false}
             .store(in: &subscriptions)
         
         uploadProduct
             .filter{[unowned self] _ in
+                self.isLoading = true
+
                 if product!.usdz.isEmpty {
                     return false
                 }
@@ -147,14 +157,17 @@ class UserManager: ObservableObject {
                     }
             })
             .receive(on: DispatchQueue.main)
-            .sink { _ in }
+            .sink {  [unowned self] _ in self.isLoading = false}
             .store(in: &subscriptions)
         
         uploadProduct
             .filter{[unowned self] _ in
+                self.isLoading = true
+
                 if product!.usdz.isEmpty {
                     return false
                 }
+                print(self.isLoading)
                 return true
             }
             .map({ [unowned self] SUser   in
@@ -171,7 +184,7 @@ class UserManager: ObservableObject {
                     }
             })
             .receive(on: DispatchQueue.main)
-            .sink { _ in}
+            .sink { [unowned self] _ in self.isLoading = false}
             .store(in: &subscriptions)
     }
     

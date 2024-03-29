@@ -22,6 +22,12 @@ extension Product {
         get { self.creationDate_ ?? Date() }
     }
     
+    var send: Bool {
+        get {self.send_ ?? false}
+        set (newValue){ self.send_ = newValue}
+    }
+    
+    
     var name: String {
         get { self.name_ ?? "" }
         set (newValue) { self.name_ = newValue }
@@ -61,6 +67,7 @@ extension Product {
         self.init(context: context)
         self.name = name
         self.uuid_ = UUID()
+        self.send_ = false
 
     }
     

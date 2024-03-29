@@ -10,7 +10,9 @@ import SwiftUI
 struct ProductRow: View {
    
     @ObservedObject var product: Product
+    @State private var thumbnailUIImageUSDZ: UIImage? = nil
     @State private var thumbnailUIImage: UIImage? = nil
+
 
     
     @State private var showRenameEditor: Bool = false
@@ -20,12 +22,19 @@ struct ProductRow: View {
     var body: some View {
         Group {
             HStack (spacing: 20) {
-                if let thumbnail = thumbnailUIImage {
+                if let thumbnail = thumbnailUIImageUSDZ {
                     Image(uiImage: thumbnail)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 100, height: 100)
                 }
+                if  thumbnailUIImageUSDZ == nil, let thumbnail = thumbnailUIImage {
+                    Image(uiImage: thumbnail)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 100, height: 100)
+                }
+                
                 
                 VStack  (alignment: .leading, spacing: 4){
                     HStack {
@@ -100,7 +109,8 @@ struct ProductRow: View {
                 selection: $selectionDetent)
         }
         .task {
-            thumbnailUIImage = await product.usdz.first?.getThumbnail()
+            thumbnailUIImageUSDZ = await product.usdz.first?.getThumbnail()
+            thumbnailUIImage = await product.images.first?.getThumbnail()
         }
     }
 }

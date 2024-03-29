@@ -28,7 +28,7 @@ struct ProductListView: View {
                 ProductSortedView(predicate: stateManager.predicateProduct)
                     .listRowInsets(.init(top: 5, leading: 20, bottom: 5, trailing: 0))
         }
-        .searchable(text: $stateManager.searchUser)
+        .searchable(text: $stateManager.searchProduct)
         .listStyle(.plain)
         .navigationTitle(selectedUserNameBinding)
         .navigationBarTitleDisplayMode(.inline)

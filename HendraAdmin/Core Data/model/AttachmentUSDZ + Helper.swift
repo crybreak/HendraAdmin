@@ -18,7 +18,7 @@ extension AttahcmentUSDZ {
     
     
     var send: Bool {
-        get {self.send_ ?? false}
+        get {self.send_}
         set (newValue){ self.send_ = newValue}
     }
     
@@ -63,7 +63,7 @@ extension AttahcmentUSDZ {
         guard self.thumbnailImageData_ == nil else {
             return UIImage(data: thumbnailImageData_!)
         }
-        guard let data_ = self.data_ else {
+        guard self.data_ != nil else {
             return nil
         }
 

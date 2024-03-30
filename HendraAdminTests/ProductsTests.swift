@@ -26,7 +26,7 @@ final class UserTests: XCTestCase {
 
     func test_Products_Convenience_init() {
         let name = "Hendra"
-        let user = User(name: name, context: context)
+        let user = Users(name: name, context: context)
         
         XCTAssertTrue(user.name == name , "Note should have the title given in the convenience initializer")
     }

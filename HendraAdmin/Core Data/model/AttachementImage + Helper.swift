@@ -28,7 +28,7 @@ extension AttahcmentImage {
     
     
     var send: Bool {
-        get {self.send_ ?? false}
+        get {self.send_ }
         set (newValue){ self.send_ = newValue}
     }
     

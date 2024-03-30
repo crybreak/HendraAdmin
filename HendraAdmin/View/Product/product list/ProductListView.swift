@@ -10,6 +10,7 @@ import SwiftUI
 struct ProductListView: View {
     @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var stateManager: NavigationStateManager
+    @Environment(\.searchSuggestionsPlacement) var placement
 
     @FetchRequest(fetchRequest: Product.fetch(.all))
     private var products: FetchedResults<Product>
@@ -24,13 +25,19 @@ struct ProductListView: View {
        
     var body: some View {
         List (selection: $stateManager.selectedProduct ){
-            
+        
                 ProductSortedView(predicate: stateManager.predicateProduct)
                     .listRowInsets(.init(top: 5, leading: 20, bottom: 5, trailing: 0))
         }
-        .searchable(text: $stateManager.searchProduct)
         .listStyle(.plain)
         .navigationTitle(selectedUserNameBinding)
+        .searchable(text: $stateManager.searchProduct,
+                    tokens: $stateManager.searchTokens,
+                    suggestedTokens: $stateManager.suggestedTokens,
+                    token: {token in
+            Label(token.name, systemImage: token.icon())
+        })
+       
         .navigationBarTitleDisplayMode(.inline)
         .toolbarTitleMenu(content: {
             RenameButton()

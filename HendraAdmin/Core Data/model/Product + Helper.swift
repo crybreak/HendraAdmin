@@ -23,7 +23,7 @@ extension Product {
     }
     
     var send: Bool {
-        get {self.send_ ?? false}
+        get {  self.send_}
         set (newValue){ self.send_ = newValue}
     }
     
@@ -126,6 +126,9 @@ struct ProductProperties {
     static let creationDate = "creationDate_"
     
     static let user = "user"
+    static let usdz = "usdz_"
+    static let images = "images_"
+    static let send = "send_"
 }
 
 

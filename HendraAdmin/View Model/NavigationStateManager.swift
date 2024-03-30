@@ -16,13 +16,18 @@ class NavigationStateManager: ObservableObject {
     @Published var searchUser: String = ""
     @Published var searchProduct: String = ""
 
-    
     @Published private var searchUserPredicate: NSPredicate? = nil
     @Published private var searchProductPredicate: NSPredicate? = nil
     @Published private var userSelectedPredicate: NSPredicate? = nil
-    
+    @Published private var tokenPredicate: NSPredicate? = nil
+
+   
     @Published var predicate: NSPredicate = .none
     @Published var predicateProduct: NSPredicate = .none
+    
+    @Published  var searchTokens = [ProductSearchToken]()
+    @Published var suggestedTokens = ProductSearchToken.allCases
+
 
     var productObserver: ProductObserverViewModel?
     var userObserver: UserObserverViewModel?
@@ -55,11 +60,40 @@ class NavigationStateManager: ObservableObject {
                 self.createFullPredicateForProduct()
             }.store(in: &subscriptions)
         
+        $searchTokens.dropFirst().sink { [unowned self] tokens in
+            if let first = tokens.first {
+                self.tokenPredicate = predicateHelper.createTokenPredicates(token: first)
+            } else {
+                self.tokenPredicate = nil
+            }
+            
+            self.createFullPredicateForProduct()
+        }
+        .store(in: &subscriptions)
+        
         createUserObserverTrigger()
         createProductObserverTrigger()
+        
     }
     
+    func addToken(_ token: ProductSearchToken) {
+        guard searchTokens.contains(where: {$0 == token}) == false else {return}
+        
+        if token.isStatusToken() {
+            for existingToken in searchTokens {
+                if existingToken.isStatusToken() {
+                    guard let index = searchTokens.firstIndex(of: existingToken) else { return}
+                    searchTokens.remove(at: index)
+                }
+            }
+        }
+        searchTokens.append(token)
+    }
     
+    func isTokenSelected(_ token: ProductSearchToken) -> Bool {
+        
+        searchTokens.firstIndex(of: token) != nil
+    }
     
     func userChanged(to user: Users) {
         
@@ -119,6 +153,9 @@ class NavigationStateManager: ObservableObject {
         
         if let userSelectedPredicate = self.userSelectedPredicate {
             predicates.append(userSelectedPredicate)
+        }
+        if let tokenPredicate = self.tokenPredicate {
+            predicates.append(tokenPredicate)
         }
         
         if predicates.count == 0 {

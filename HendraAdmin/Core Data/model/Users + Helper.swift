@@ -74,6 +74,23 @@ extension Users {
         return request
     }
     
+    static func fetch(_ uuidString: String, context: NSManagedObjectContext)-> Users? {
+        guard let uuid = UUID(uuidString: uuidString) else {return nil}
+        return Users.fetch(uuid, context: context)
+    }
+    
+    static func fetch (_ uuid: UUID, context: NSManagedObjectContext) -> Users? {
+        let predicate = NSPredicate(format:  "%K == %@", UserProperties.uuid, uuid as CVarArg)
+        let request = Users.fetch(predicate)
+        request.fetchLimit = 1
+        
+        if let users = try? context.fetch(request), let user = users.first {
+            return user
+        } else {
+            return nil
+        }
+    }
+    
     static func delete(_ user: Users) {
         guard let context = user.managedObjectContext else {return}
         context.delete(user)

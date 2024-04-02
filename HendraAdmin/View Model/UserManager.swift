@@ -15,12 +15,16 @@ class UserManager: ObservableObject {
     @Published var users: [SUser] = []
     @Published var product: Product? = nil
     @Published var message: String? = nil
-    @Published var isLoading: Bool = false
-    
+    @Published var isLoding: Bool = false
+    @Published var imgLoading: Bool = false
+    @Published var usdzLoading: Bool = false
+
+
     var sendProduct =  PassthroughSubject<Product, Never>()
     var createProduct = PassthroughSubject<SUser, Never>()
     var uploadProduct = PassthroughSubject<SUser, Never>()
     var subscriptions = Set<AnyCancellable>()
+    
     
     let opQueue = OperationQueue()
     
@@ -62,8 +66,6 @@ class UserManager: ObservableObject {
                 if users.isEmpty {
                     message = "Aucun compte avec à cet email."
                 } else {
-                    
-                    isLoading = true
                     createProduct.send(users.first!)
                     uploadProduct.send(users.first!)
                 }
@@ -82,110 +84,12 @@ class UserManager: ObservableObject {
             }
             .store(in: &subscriptions)
 
+        uploadTumbnailImage()
+        uploadFullImage()
+        uploadUsdzThumbnailImage()
+        uploadUsdzData()
         
-        uploadProduct
-            .filter{[unowned self] _ in
-                self.isLoading = true
-                if product!.images.isEmpty {
-                    return false
-                }
-                return true
-            }
-            .map({ [unowned self] SUser   in
-                product?.images.publisher
-                    .filter({!$0.send})
-                    .map { image -> AnyPublisher<String?, Never> in
-                        StorageManager.shared.saveImage(image: image , userId: SUser.userId , type: "ThumbnaiData", product: self.product!)
-                            .compactMap { storage in
-                                storage?.path
-                            }
-                            .replaceError(with: nil)
-                            .subscribe(on: self.opQueue)
-                            .eraseToAnyPublisher()
-                    }
-            })
-            .receive(on: DispatchQueue.main)
-            .sink {  [unowned self] _ in self.isLoading = false}
-            .store(in: &subscriptions)
-        
-        uploadProduct
-            .filter{[unowned self] _ in
-                self.isLoading = true
-
-                if product!.images.isEmpty {
-                    return false
-                }
-                return true
-            }
-            .map({ [unowned self] SUser   in
-                product?.images.publisher
-                    .filter({!$0.send})
-                    .map { image -> AnyPublisher<String?, Never> in
-                        StorageManager.shared.saveImage(image: image , userId: SUser.userId , type: "FullImageData", product: self.product!)
-                            .compactMap {storage in
-                                storage?.path
-                            }
-                            .replaceError(with: nil)
-                            .subscribe(on: self.opQueue)
-                            .eraseToAnyPublisher()
-                    }
-            })
-            .receive(on: DispatchQueue.main)
-            .sink { [unowned self] _ in self.isLoading = false}
-            .store(in: &subscriptions)
-        
-        uploadProduct
-            .filter{[unowned self] _ in
-                self.isLoading = true
-
-                if product!.usdz.isEmpty {
-                    return false
-                }
-                return true
-            }
-            .map({ [unowned self] SUser   in
-                product?.usdz.publisher
-                    .filter({!$0.send})
-                    .map { usdz -> AnyPublisher<String?, Never> in
-                        StorageManager.shared.saveUsdz(usdz: usdz, userId: SUser.userId, product: product!)
-                            .compactMap {storage in
-                                storage?.path
-                            }
-                            .replaceError(with: nil)
-                            .subscribe(on: self.opQueue)
-                            .eraseToAnyPublisher()
-                    }
-            })
-            .receive(on: DispatchQueue.main)
-            .sink {  [unowned self] _ in self.isLoading = false}
-            .store(in: &subscriptions)
-        
-        uploadProduct
-            .filter{[unowned self] _ in
-                self.isLoading = true
-
-                if product!.usdz.isEmpty {
-                    return false
-                }
-                print(self.isLoading)
-                return true
-            }
-            .map({ [unowned self] SUser   in
-                product?.usdz.publisher
-                    .filter({!$0.send})
-                    .map { usdz -> AnyPublisher<String?, Never> in
-                        StorageManager.shared.saveUsdzImage(usdz: usdz, userId: SUser.userId, product: self.product!)
-                            .compactMap {storage in
-                                storage?.path
-                            }
-                            .replaceError(with: nil)
-                            .subscribe(on: self.opQueue)
-                            .eraseToAnyPublisher()
-                    }
-            })
-            .receive(on: DispatchQueue.main)
-            .sink { [unowned self] _ in self.isLoading = false}
-            .store(in: &subscriptions)
+       
     }
     
 }

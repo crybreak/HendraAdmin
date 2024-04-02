@@ -22,6 +22,7 @@
         <attribute name="creationDate_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="genre_" optional="YES" attributeType="String"/>
         <attribute name="name_" optional="YES" attributeType="String"/>
+        <attribute name="send_" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="type_" optional="YES" attributeType="String"/>
         <attribute name="uuid_" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <relationship name="images_" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="AttahcmentImage" inverseName="product" inverseEntity="AttahcmentImage"/>

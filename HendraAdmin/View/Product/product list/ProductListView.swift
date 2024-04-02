@@ -58,7 +58,9 @@ struct ProductListView: View {
                     }
                 }
             }
-
+        .onDisappear {
+            PersistenceController.shared.save()
+        }
     }
 }
 

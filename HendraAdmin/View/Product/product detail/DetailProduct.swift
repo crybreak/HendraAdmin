@@ -32,7 +32,6 @@ struct DetailProduct: View {
             VStack (alignment: .leading){
                 if (userManager.message != nil) {
                     MessageView(message: $userManager.message)
-                        .zIndex(/*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
                 }
                 if let selected3D  {
                     Home(product: product, attachment: selected3D)
@@ -70,7 +69,7 @@ struct DetailProduct: View {
                         userManager.sendProduct.send(product)
                     } label: {
                         Image(systemName: "paperplane.fill")
-                    }
+                    }.disabled(userManager.isLoding)
                 }
             }
             .onDisappear {

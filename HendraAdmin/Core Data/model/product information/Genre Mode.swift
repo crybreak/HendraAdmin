@@ -9,8 +9,9 @@ import Foundation
 
 enum GenreMode: String, Identifiable, CaseIterable{
 
-    case vetements = "Vetements"
+    case vetements = "Vêtements"
     case chaussures = "Chaussures"
+    case accessoire = "Accessoires"
     
     
     var id: String {

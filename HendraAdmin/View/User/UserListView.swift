@@ -27,7 +27,7 @@ struct UserListView: View {
         .toolbar {
                 ToolbarItem(placement: .status) {
                     Button {
-                        stateManager.addUser(name: "Ailfried GOSSAN", country: Country.CI , email: "gossanguy1@gmail.com", phoneNumber: "+229 69593221")
+                        stateManager.addUser(name: "Alfried Doe", country: Country.CI , email: "gossanguy1@gmail.com", phoneNumber: "+229 69593221")
                     }label: {
                         Label("User", systemImage: "person.crop.circle.badge.checkmark")
                             .labelStyle(.titleAndIcon)
@@ -35,6 +35,9 @@ struct UserListView: View {
                 }
             }
         .navigationTitle("Users")
+        .onDisappear {
+            PersistenceController.shared.save()
+        }
 
     }
     

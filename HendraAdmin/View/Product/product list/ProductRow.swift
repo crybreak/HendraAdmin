@@ -42,13 +42,13 @@ struct ProductRow: View {
                             .foregroundStyle(.primary)
                             .font(.system(size: 15))
                         if product.send {
-                            Text("Envoyé")
+                            Text("Upload")
                                 .font(.caption)
                                 .foregroundColor(.white)
                                 .padding(.horizontal, 5)
                                 .padding(.vertical, 5)
                                 .background(RoundedRectangle(cornerRadius: 5,
-                                                             style: .continuous).fill(Color.red))
+                                                             style: .continuous).fill(Color(hex: "E15F39")!))
                         } else {
                             Text("Draft")
                                 .font(.caption)
@@ -56,7 +56,7 @@ struct ProductRow: View {
                                 .padding(.horizontal, 5)
                                 .padding(.vertical, 5)
                                 .background(RoundedRectangle(cornerRadius: 5,
-                                                             style: .continuous).fill(Color.blue))
+                                                             style: .continuous).fill(Color(hex: "093855")!))
                         }
                     }
                     

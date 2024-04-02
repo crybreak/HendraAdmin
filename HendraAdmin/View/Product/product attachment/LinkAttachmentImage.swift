@@ -21,35 +21,31 @@ struct LinkedAttachmentImage: View {
     
     @ObservedObject var product: Product
     @Environment(\.managedObjectContext) var viewContext
-    
+   
     @State private var selectImage: Date =  Date() + TimeInterval()
         
     var body: some View {
-        GeometryReader(content: { geometry in
-            ScrollView(.horizontal) {
-                LazyVGrid(columns: gridItems(for: geometry.size.width),spacing: 0) {
-                    ForEach(product.images.sorted()) { attachment in
-                        ZStack (alignment: .topLeading) {
-                            ProductAttachementImageView(attachment: attachment)
-                                .contextMenu {
-                                    Button(role: .destructive) {
-                                        AttahcmentImage.delete(attachment)
-                                    } label: {
-                                        Text("Delete image")
-                                    }
-                                }
-                            
-                            ProductPhotoSelectorButton(product: product, attachment: attachment)
-                                .labelStyle(.iconOnly)
-                                .imageScale(.medium)
-                                .bold()
-                                .foregroundColor(attachment.send == false ? .white : .blue)
-                                .padding(.top)
+        LazyVGrid(columns: gridItems(for: 393.0),spacing: 2) {
+            ForEach(product.images.sorted()) { attachment in
+                ZStack (alignment: .topLeading) {
+                    ProductAttachementImageView(attachment: attachment)
+                        .contextMenu {
+                            Button(role: .destructive) {
+                                AttahcmentImage.delete(attachment)
+                            } label: {
+                                Text("Delete image")
+                            }
                         }
-                    }
+                    
+                    ProductPhotoSelectorButton(product: product, attachment: attachment)
+                        .labelStyle(.iconOnly)
+                        .imageScale(.medium)
+                        .bold()
+                        .foregroundColor(attachment.send == false ? .white : .blue)
+                        .padding(.top)
                 }
             }
-        })
+        }
     }
                     
 }

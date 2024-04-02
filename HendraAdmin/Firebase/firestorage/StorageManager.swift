@@ -75,14 +75,17 @@ final class StorageManager {
         let meta = StorageMetadata()
         meta.contentType = "application/octet-stream"
         
+
+        print(usdz.data_!)
         let path = "\(usdz.creationDate.description).usdz"
-        
+
         return Future <StorageMetadata?, Error>  { [self] promise in
             self.imageReference.child(userId).child("Product")
                 .child(product.name + " " + product.genre + " " + product.type.rawValue)
                 .child("USDZ")
                 .child(path)
                 .putData(usdz.data_!, metadata: meta) { storage, error in
+
                 if let error = error {
                     print(error.localizedDescription)
                     promise(Result.failure(error))
@@ -146,7 +149,7 @@ final class StorageManager {
     func getUrlForPath(path: String, completion: @escaping (URL?) -> Void) {
         Storage.storage().reference(withPath: path).downloadURL { (url, error) in
             if let error = error {
-                print(error.localizedDescription)
+                print("Error getUrlForPath \(error.localizedDescription)")
                 completion(nil)
             } else {
                 completion(url)

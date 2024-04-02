@@ -66,6 +66,4 @@ final class UserTests: XCTestCase {
         XCTAssertNotNil(fetchedProducts)
         XCTAssertTrue(fetchedProducts!.count == 0, "Predicate of none should not fetch any objects")
     }
-
-
 }

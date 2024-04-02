@@ -166,4 +166,15 @@ class NavigationStateManager: ObservableObject {
             self.predicateProduct = NSCompoundPredicate(andPredicateWithSubpredicates: predicates)
         }
     }
+    
+    func restoreState (userID: String?, productID: String?, context: NSManagedObjectContext) {
+        if let uuidString = userID, selectedUser == nil  {
+            selectedUser = Users.fetch(uuidString, context: context)
+        }
+        
+        if let uuidString = productID, selectedProduct == nil  {
+            selectedProduct = Product.fetch(uuidString, context: context)
+        }
+    }
+    
 }

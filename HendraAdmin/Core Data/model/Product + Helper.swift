@@ -83,6 +83,24 @@ extension Product {
         return request
     }
     
+    
+    static func fetch(_ uuidString: String, context: NSManagedObjectContext)-> Product? {
+        guard let uuid = UUID(uuidString: uuidString) else {return nil}
+        return Product.fetch(uuid, context: context)
+    }
+    
+    static func fetch (_ uuid: UUID, context: NSManagedObjectContext) -> Product? {
+        let predicate = NSPredicate(format:  "%K == %@", UserProperties.uuid, uuid as CVarArg)
+        let request = Product.fetch(predicate)
+        request.fetchLimit = 1
+        
+        if let products = try? context.fetch(request), let product = products.first {
+            return product
+        } else {
+            return nil
+        }
+    }
+    
     static func delete(_ product: Product) {
         
         guard let context = product.managedObjectContext else {return}
